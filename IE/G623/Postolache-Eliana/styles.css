@@ -1,49 +1,189 @@
 body {
-    background-color: antiquewhite;
+    background:/*orangered;*/ linear-gradient(to right, #b4bcc1 0%, #929494 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
-
+h1{
+    color:#ffffff ;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
 form {
-    background-color: azure;
-    padding-left: 15%;
-    padding-top: 5%;
+    background: #0b0908;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffb5b5;
 }
 
-p {
-    font-size: 20px;
-    color: green;
+h2 {
+    color: #a59f9f;
     font-weight: 500;
+    margin-top: 2px;
+    margin-bottom: 10px;
 }
 
-.paragraf {
-    font-size: 30px;
-    color: green;
-    font-weight: 500;
+progress[value] {/* bara de progres in general*/
+    appearance: none;
+    -webkit-appearance: none; /* elimină default style chrome/safari  */
+    -moz-appearance:none;/*pt firefox*/
+    border: none;
+    width: 200px;
+    height:10px;
+    margin: 2px 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+progress[value]::-webkit-progress-bar {/*fundal bara de progres*/
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  progress[value]:: ::-moz-progress-bar {/*fundal bara de progres*/
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  /* Indicatorul de progres în Webkit(chrome/safari) */
+progress[value]::-webkit-progress-value {
+    background:/* orangered;*/linear-gradient(to right, #b4bcc1 0%, #929494 100%);
+    border-radius: 10px;
 }
 
-.titlu {
-    font-size: 50px;
-    color: blue;
+/* Indicatorul de progres în Firefox (moz) */
+progress[value]::-moz-progress-bar {
+    background:/* orangered;*/linear-gradient(to right, #b4bcc1 0%, #929494 100%);
+    border-radius: 10px;
+}
+span{
+    color:#a59f9f;
 }
 
-select,
 input[type="text"],
 input[type="password"],
-input[type="phone"],
+input[type="tel"],
 input[type="email"],
-input[type="date"] {
-    border-color: green;
+input[type="date"],
+select {
+    border: 2px solid #b6b6b6;
     border-radius: 15px;
     outline: none;
     margin-bottom: 10px;
-
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #ffffff;
 }
 
-select:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="phone"]:focus,
-input[type="email"]:focus,
-input[type="date"]:focus {
-    border-color: orange;
-    outline: none;
+input:focus, select:focus {
+    border-color: rgb(0, 86, 152);
+    background-color: #b6b6b6;
 }
+
+input[type="checkbox"]{
+margin-top: 15px;
+}
+
+input[type="date"]{
+    color:#838383 ;
+    }
+select{
+    height: 40px;
+    color:#838383 ;
+}
+.firstInput{
+    margin-top: 15px;
+}
+
+button {
+    background-color:white;
+    color: #0b0908;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+p{
+    color: #a59f9f;
+}
+
+a{
+    color:  rgb(0, 86, 152);
+}
+.divForm {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    height: 100vh; /* Stretch to full viewport height */
+    background: #0b0908;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.9), 35px 45px 50px rgba(0, 0, 0, 0.5);
+}
+
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.image-center {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+/*.divForm {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 40px;
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    background: #0b0908;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.9), 35px 45px 50px rgba(0, 0, 0, 0.5);
+}*/
+
+.signupForm {
+    flex: 1;
+}
+
+/*.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50px;
+}*/
+
+/*.image-center {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}*/
+
